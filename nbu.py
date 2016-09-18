@@ -30,7 +30,7 @@ def nbu2list(nbufile):
             if in_vbody:
                 if "Date" in line:
                     continue
-                if not "VBODY" in line:
+                if "VBODY" not in line:
                     content += line.replace("\n", "")
                     continue
                 if "END:VBODY" in line:
